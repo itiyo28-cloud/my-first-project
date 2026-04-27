@@ -2,10 +2,147 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>My First Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>自己紹介</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      font-size: 1rem;
+      line-height: 1.75;
+      color: #2c2c2c;
+      background: #f6f6f5;
+    }
+
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 3.5rem;
+    }
+
+    header {
+      margin-bottom: 2.25rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #dcdcd9;
+    }
+
+    h1 {
+      margin: 0 0 0.35em;
+      font-size: clamp(1.5rem, 4vw, 1.85rem);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: #1a1a1a;
+    }
+
+    .lead {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section:last-of-type {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 0.65em;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    p {
+      margin: 0 0 1em;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 0 0 1em;
+      padding-left: 1.25em;
+    }
+
+    li {
+      margin-bottom: 0.35em;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    .profile-photo {
+      margin: 0 0 1.25rem;
+    }
+
+    .profile-photo img {
+      display: block;
+      width: 100%;
+      max-width: 15rem;
+      height: auto;
+      border-radius: 6px;
+      border: 1px solid #e0e0dd;
+    }
+
+    .profile-photo figcaption {
+      margin-top: 0.5em;
+      max-width: 15rem;
+      font-size: 0.85rem;
+      color: #666;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello GitHub</h1>
-  <p>これは最初のHTMLファイルです。</p>
+  <main>
+    <header>
+      <figure class="profile-photo">
+        <img
+          src="images/self-intro.png"
+          alt="登山の山頂で撮影した二人の記念写真。背後に「頂山 397.8m」の標識と森が見える。"
+          width="1024"
+          height="768"
+          loading="lazy"
+          decoding="async">
+        <figcaption>自己紹介の写真（登山の思い出）</figcaption>
+      </figure>
+      <h1>山田 太郎</h1>
+      <p class="lead">はじめまして。Webの基礎を学習中です。</p>
+    </header>
+
+    <section aria-labelledby="about-heading">
+      <h2 id="about-heading">自己紹介</h2>
+      <p>
+        趣味は読書・散歩に加え、登山も楽しんでいます。最近は HTML と CSS に触れ始め、自分のページを作れるようになりたいと思っています。
+      </p>
+    </section>
+
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">学んでいること</h2>
+      <ul>
+        <li>HTML（文書の構造）</li>
+        <li>CSS（見た目の調整）</li>
+        <li>Git / GitHub（バージョン管理）</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="goal-heading">
+      <h2 id="goal-heading">これから</h2>
+      <p>
+        シンプルで読みやすいページを自分の力で整えられるよう、少しずつ練習していきます。内容はお好みに合わせて書き換えてください。
+      </p>
+    </section>
+  </main>
 </body>
 </html>

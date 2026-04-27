@@ -3,3 +3,4 @@
 最初のGitHub練習用リポジトリです。
 GitHub DesktopとGitHubの使い方を確認するために作成しました。
 このREADMEはMacで編集しました。
+練習不足です
